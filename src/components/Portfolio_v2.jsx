@@ -1,4 +1,7 @@
-/* FIXES APPLIED:
+/**
+ * Portfolio_v2_fixed.jsx
+ * ─────────────────────────────────────────────────────────────
+ * FIXES APPLIED:
  *   1. All Tailwind classes replaced with inline styles
  *   2. ProjectCard Reveal wrapper removed — grid borders work correctly now
  *   3. SkillCell group-hover Tailwind class replaced with React state
@@ -511,11 +514,13 @@ function ProjectCard({ project, odd, idx, total }) {
     <motion.div
       ref={ref}
       initial={{ opacity: 0, y: 24 }}
-      animate={inView ? { opacity: 1, y: 0 } : {}}
+      animate={inView
+        ? { opacity: 1, y: 0, background: hovered ? "#0a0a0a" : "#F5F0E8", color: hovered ? "#F5F0E8" : "#0a0a0a" }
+        : { opacity: 0, y: 24 }
+      }
       transition={{ duration: 0.55, delay: idx * 0.07, ease: [0.16, 1, 0.3, 1] }}
       onHoverStart={() => setHovered(true)}
       onHoverEnd={() => setHovered(false)}
-      animate={{ background: hovered ? "#0a0a0a" : "#F5F0E8", color: hovered ? "#F5F0E8" : "#0a0a0a" }}
       style={{
         padding: "36px 40px",
         cursor: "default",
