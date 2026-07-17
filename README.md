@@ -35,10 +35,10 @@ This project is a **multi-design portfolio system** where a central home screen 
 ```
 Home Screen (Design Selector)
         │
-        ├── V1  Dark Neon          →  JohnDoe_Portfolio.jsx
-        ├── V2  Editorial          →  JohnDoe_Portfolio_v2.jsx  (fixed)
-        ├── V3  Terminal OS        →  JohnDoe_Portfolio_v3.jsx
-        └── V4  Bento Glass 2025  →  JohnDoe_Portfolio_v4.jsx
+        ├── V1  Dark Neon          →  Portfolio.jsx
+        ├── V2  Editorial          →  Portfolio_v2.jsx  (fixed)
+        ├── V3  Terminal OS        →  Portfolio_v3.jsx
+        └── V4  Bento Glass 2025  →   Portfolio_v4.jsx
 ```
 
 Every design contains the **same 8 sections**:
@@ -68,10 +68,10 @@ portfolio/
 ├── src/
 │   ├── App.jsx                        # 🏠 Home selector hub — entry point
 │   │
-│   ├── JohnDoe_Portfolio.jsx          # 🌌 V1 — Dark Neon
-│   ├── JohnDoe_Portfolio_v2.jsx       # 📰 V2 — Editorial Brutalist (fixed)
-│   ├── JohnDoe_Portfolio_v3.jsx       # 💻 V3 — Terminal OS
-│   ├── JohnDoe_Portfolio_v4.jsx       # ✨ V4 — Bento Glass 2025
+│   ├── Portfolio.jsx                  # 🌌 V1 — Dark Neon
+│   ├── Portfolio_v2.jsx               # 📰 V2 — Editorial Brutalist (fixed)
+│   ├── Portfolio_v3.jsx               # 💻 V3 — Terminal OS
+│   ├── Portfolio_v4.jsx               # ✨ V4 — Bento Glass 2025
 │   │
 │   ├── main.jsx                       # React DOM entry point
 │   └── index.css                      # Global resets (optional)
@@ -130,10 +130,10 @@ Place all five files in `src/`:
 ```
 src/
 ├── App.jsx                      ← common hub (entry point)
-├── JohnDoe_Portfolio.jsx        ← V1
-├── JohnDoe_Portfolio_v2.jsx     ← V2 (use the _fixed version)
-├── JohnDoe_Portfolio_v3.jsx     ← V3
-├── JohnDoe_Portfolio_v4.jsx     ← V4
+├── Portfolio.jsx                ← V1
+├── Portfolio_v2.jsx             ← V2 (use the _fixed version)
+├── Portfolio_v3.jsx             ← V3
+├── Portfolio_v4.jsx             ← V4
 └── main.jsx
 ```
 
@@ -174,7 +174,7 @@ npm run preview   # preview the production build locally
 
 ### V1 — Dark Neon
 
-**File:** `JohnDoe_Portfolio.jsx`
+**File:** `Portfolio.jsx`
 
 > Deep space dark theme with cyan-to-violet gradients, an animated rotating avatar ring, staggered skill bars, parallax hero and glowing cards.
 
@@ -208,7 +208,7 @@ Text        #f1f5f9
 
 ### V2 — Editorial Brutalist
 
-**File:** `JohnDoe_Portfolio_v2.jsx` *(use the fixed version)*
+**File:** `Portfolio_v2.jsx` *(use the fixed version)*
 
 > Warm parchment background, Playfair Display serif, thick `2px` ink-black borders, hover-invert rows — magazine layout meets brutalist design.
 
@@ -248,7 +248,7 @@ Muted       #888888
 
 ### V3 — Terminal OS
 
-**File:** `JohnDoe_Portfolio_v3.jsx`
+**File:** `Portfolio_v3.jsx`
 
 > A fully simulated operating system — complete with BIOS boot sequence, CRT scanline overlay, sticky taskbar, live system clock and collapsible project file windows.
 
@@ -282,7 +282,7 @@ Text          #b8f0c8
 
 ### V4 — Bento Glass 2025
 
-**File:** `JohnDoe_Portfolio_v4.jsx`
+**File:** `Portfolio_v4.jsx`
 
 > The dominant 2025 design trend — frosted glass bento grid cards, floating pill navbar, noise texture overlay, spinning conic avatar ring and deep indigo space palette.
 
